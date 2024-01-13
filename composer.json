@@ -1,6 +1,6 @@
 {
     "name": "radishesflight/pay",
-    "description": "支付加密和验签",
+    "description": "富有支付加密和验签",
     "type": "library",
     "version": "1.0.0",
     "keywords": [
