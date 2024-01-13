@@ -1,0 +1,25 @@
+{
+    "name": "radish/pay",
+    "description": "支付加密和验签",
+    "type": "library",
+    "version": "1.0.0",
+    "keywords": [
+        "pay"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Radish\\Pay\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Du xing yu",
+            "email": "2669512446@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.0"
+    }
+}
