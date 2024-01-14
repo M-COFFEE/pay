@@ -2,7 +2,6 @@
     "name": "radishesflight/pay",
     "description": "富有支付加密和验签",
     "type": "library",
-    "version": "1.0.0",
     "keywords": [
         "pay"
     ],
@@ -18,8 +17,14 @@
             "email": "2669512446@qq.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-        "php": ">=7.1.0"
-    }
+        "php": ">=7.1.0",
+        "guzzlehttp/guzzle": ">=6.0.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.0"
+        }
+    },
+    "minimum-stability": "dev"
 }

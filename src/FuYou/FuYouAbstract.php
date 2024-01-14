@@ -2,8 +2,6 @@
 
 namespace Radish\Pay\FuYou;
 
-use app\api\extend\fuYou\FuYouService;
-
 class FuYouAbstract
 {
     protected $config;

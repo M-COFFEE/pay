@@ -4,7 +4,6 @@ namespace Radish\Pay\FuYou;
 
 
 use GuzzleHttp\Client;
-use Radish\Pay\PaymentCallbackInterFace;
 use Radish\Pay\PaymentStrategyInterFace;
 
 /**
