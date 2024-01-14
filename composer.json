@@ -5,25 +5,25 @@
     "keywords": [
         "pay"
     ],
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Radish\\Pay\\": "src/"
-        }
+    "require": {
+        "php": ">=7.1.0",
+        "guzzlehttp/guzzle": ">=6.0.0"
     },
+    "license": "MIT",
     "authors": [
         {
             "name": "Du xing yu",
             "email": "2669512446@qq.com"
         }
     ],
-    "require": {
-        "php": ">=7.1.0",
-        "guzzlehttp/guzzle": ">=6.0.0"
+    "autoload": {
+        "psr-4": {
+            "Radish\\Pay\\": "src/"
+        }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.0"
+            "dev-master": "1.0.0-dev"
         }
     },
     "minimum-stability": "dev"
