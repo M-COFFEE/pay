@@ -27,17 +27,17 @@
 
         //富有pc扫码支付
         $pay = new PayMemberFactory();
-        $payWay=new FuYouPcPay(public_path().'fuYou.php');
+        $payWay=new FuYouPcPay();
+        $payWay->setConfig(public_path().'fuYou.php');
         $orderNumber = create_order_number(102);
         $orderNumber='mhy'.$orderNumber;
         $payData= [
             'order_amt' => 1,
             'order_id'=> $orderNumber,
-            'type'=>'WECHAT', //微信 WECHAT 支付宝 ALIPAY
+            'type'=>'WECHAT',//微信 WECHAT 支付宝 ALIPAY
         ];
         $pay->setPaymentStrategy($payWay);
         dd($pay->processPayment($payData));
-
         
         //获取回调
         $call=new FuYouCallback();
