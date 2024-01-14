@@ -1,6 +1,6 @@
 <?php
 
-namespace Radish\Pay\FuYou;
+namespace RadishesFlight\Pay\FuYou;
 
 class FuYouAbstract
 {

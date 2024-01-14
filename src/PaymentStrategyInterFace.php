@@ -1,6 +1,6 @@
 <?php
 
-namespace Radish\Pay;
+namespace RadishesFlight\Pay;
 
 interface PaymentStrategyInterFace
 {
