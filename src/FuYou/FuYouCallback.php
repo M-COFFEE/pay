@@ -3,7 +3,7 @@
 namespace RadishesFlight\Pay\FuYou;
 
 
-use Radish\Pay\PaymentCallbackInterFace;
+use RadishesFlight\Pay\PaymentCallbackInterFace;
 
 /**
  * 富友回调

@@ -4,7 +4,7 @@ namespace RadishesFlight\Pay\FuYou;
 
 
 use GuzzleHttp\Client;
-use Radish\Pay\PaymentStrategyInterFace;
+use RadishesFlight\Pay\PaymentStrategyInterFace;
 
 /**
  * 富友支付-pc扫码
