@@ -7,13 +7,14 @@
     ],
     "require": {
         "php": ">=7.1.0",
-        "guzzlehttp/guzzle": ">=6.0.0"
+        "guzzlehttp/guzzle": ">=6.0.0",
+        "lpilp/guomi": "^1.0.3"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "Du xing yu",
-            "email": "2669512446@qq.com"
+            "name": "radishesflight",
+            "email": "530606930@qq.com"
         }
     ],
     "autoload": {
