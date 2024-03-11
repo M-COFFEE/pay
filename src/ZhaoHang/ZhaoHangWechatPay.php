@@ -19,7 +19,7 @@ class ZhaoHangWechatPay extends ZhangHangAbstract implements PaymentStrategyInte
         $biz_content["currencyCode"] =  $this->config['currencyCode'];
         $biz_content["tradeType"] = 'JSAPI';
         $biz_content["userId"] =  $this->config['userId'];
-        $biz_content["txnAmt"] = $data['amount']; //单位分
+        $biz_content["txnAmt"] = $data['txnAmt']; //单位分
         $biz_content["mchReserved"] = $data['mchReserved'];
         $biz_content["body"] = $data['body'] ?? '';
         $biz_content["spbillCreateIp"] = $_SERVER['REMOTE_ADDR'];
