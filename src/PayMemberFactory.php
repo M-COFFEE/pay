@@ -9,6 +9,11 @@ class PayMemberFactory
     public $paymentStrategy;
 
     /**
+     * @var PaymentRefundInterFace
+     */
+    public $refundStrategy;
+
+    /**
      * @var PaymentCallbackInterFace
      */
     public $paymentCallback;
@@ -24,6 +29,16 @@ class PayMemberFactory
     public function processPayment($data)
     {
         return $this->paymentStrategy->pay($data);
+    }
+
+    public function setRefundStrategy(PaymentRefundInterFace $refundInterFace)
+    {
+        $this->refundStrategy = $refundInterFace;
+    }
+
+    public function processRefund($data)
+    {
+        return $this->refundStrategy->refund($data);
     }
 
     public function setPaymentCallback(PaymentCallbackInterFace $paymentStrategy)
