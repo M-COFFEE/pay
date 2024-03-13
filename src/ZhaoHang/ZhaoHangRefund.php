@@ -19,6 +19,7 @@ class ZhaoHangRefund extends ZhangHangAbstract implements PaymentRefundInterFace
         $biz_content["origCmbOrderId"] = $data['origCmbOrderId']??""; //原交易平台订单号
         $biz_content["notifyUrl"] = $data['notifyUrl']??$this->config['notifyUrl'];//交易通知地址 若为空则通知到原交易的通知地址
         $biz_content["refundAmt"]=$data['refundAmt'];//退款金额
+        $biz_content["txnAmt"]=$data['txnAmt'];//原交易金额
         $biz_content["refundOrigAmt"]=$data['refundOrigAmt']??'';//退单原始金额，单位为分，与refundCouponAmt同时出现
         $biz_content["refundCouponAmt"]=$data['refundCouponAmt']??'';//退单优惠金额，单位为分，与refundOrigAmt同时出现
         $biz_content["refundReason"] = $data['refundReason']??'';//退款原因
