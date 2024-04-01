@@ -18,6 +18,12 @@ class PayMemberFactory
      */
     public $paymentCallback;
 
+    /**
+     * @var PaymentResultInterFace
+     */
+    public $resultInterFace;
+
+
 
     public $configDaTaOrPath;
 
@@ -41,6 +47,11 @@ class PayMemberFactory
         return $this->refundStrategy->refund($data);
     }
 
+    public function processRefundQeury($data)
+    {
+        return $this->refundStrategy->refundQuery($data);
+    }
+
     public function setPaymentCallback(PaymentCallbackInterFace $paymentStrategy)
     {
         $this->paymentCallback = $paymentStrategy;
@@ -49,5 +60,15 @@ class PayMemberFactory
     public function processPaymentCallback($data = [])
     {
         return $this->paymentCallback->callback($data);
+    }
+
+    public function setResultParams(PaymentResultInterFace $resultInterFace)
+    {
+        $this->resultInterFace = $resultInterFace;
+    }
+
+    public function processResult($data = [])
+    {
+        return $this->resultInterFace->resultQuery($data);
     }
 }
